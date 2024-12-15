@@ -7,12 +7,12 @@ const result = dotenv.config({
   path: path.resolve(__dirname, "../.env"),
 });
 
-if (result.error) {
-  logging.log("----------------------------------------");
-  logging.log("Error loading .env file:", result.error);
-  logging.log("----------------------------------------");
-  throw result.error;
-}
+// if (result.error) {
+//   logging.log("----------------------------------------");
+//   logging.log("Error loading .env file:", result.error);
+//   logging.log("----------------------------------------");
+//   throw result.error;
+// }
 
 // Environment flags
 export const DEVELOPMENT = process.env.NODE_ENV === "development";
